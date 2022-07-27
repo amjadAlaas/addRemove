@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        nav {
+            background-color: #3e3e3e;
+            padding: 20px 0;
+        }
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        a {
+            display: block;
+            text-decoration: none;
+            color: rgb(130, 180, 165);
+            transition: all .4s ease;
+        }
+        a.active {
+            color: aqua;
+        }
+        section {
+            width: 600px;
+            height: 300px;
+            border: 1px solid #333;
+            margin: 10px auto;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="home">home</section>
+    <section id="about">about</section>
+    <section id="contact">contact</section>
+    <script src="script.js"></script>
+</body>
+</html>
